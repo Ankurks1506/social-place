@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
 import { useNavigate,Link } from 'react-router-dom';
-import './signup.css';
+@import "tailwindcss";
+
 
 const Signup = () => {
   const navigate = useNavigate();
