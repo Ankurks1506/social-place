@@ -24,7 +24,7 @@ const Signup = () => {
     setSuccess('');
 
     try {
-      const response = await fetch('https://social-place-backend-ivev.vercel.app/signup', {
+      const response = await fetch('https://social-place-backend.vercel.app/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
