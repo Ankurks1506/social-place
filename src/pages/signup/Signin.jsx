@@ -15,7 +15,7 @@ const Signin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://social-place-backend-enjp.vercel.app/login', formData);  // Posts to login endpoint
+      const res = await axios.post('https://social-place-backend-ivev.vercel.app/login', formData);  // Posts to login endpoint
       localStorage.setItem('token', res.data.token);  // Stores token
       navigate('/home');  // Redirects
     } catch (err) {
