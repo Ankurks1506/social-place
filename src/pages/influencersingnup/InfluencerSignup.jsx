@@ -52,7 +52,7 @@ const InfluencerSignup = () => { // Define signup form component
     formDataToSend.append('category', formData.category); // Append category
 
     try { // Try API call
-      const response = await fetch('http://localhost:5000/influencers', { // POST to backend
+      const response = await fetch('https://social-place-backend.vercel.app/influencers', { // POST to backend
         method: 'POST', // HTTP method
         headers: { Authorization: `Bearer ${token}` }, // Include JWT in header
         body: formDataToSend // Send FormData
