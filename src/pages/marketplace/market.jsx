@@ -18,7 +18,7 @@ const Market = () => {
 
   // Fetch all influencers on component mount
   useEffect(() => {
-    axios.get('http://localhost:5000/influencerprofile')
+    axios.get('https://social-place-backend.vercel.app/influencerprofile')
       .then(res => {
         setInfluencers(res.data); // Update state with fetched data
         setFilteredInfluencers(res.data); // Initially show all influencers
