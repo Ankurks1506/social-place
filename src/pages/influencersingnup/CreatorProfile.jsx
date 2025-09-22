@@ -20,7 +20,7 @@ const Profile = () => { // Define Profile component
       return;
     }
     try { // Try block for error handling
-      const response = await fetch('http://localhost:5000/influencers/me', { // GET user's influencer profile
+      const response = await fetch('https://social-place-backend.vercel.app/me', { // GET user's influencer profile
         headers: { Authorization: `Bearer ${token}` } // Include JWT in header
       });
       if (response.ok) { // Check if response is successful
