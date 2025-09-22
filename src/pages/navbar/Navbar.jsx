@@ -22,7 +22,7 @@ const NavBar = () => {
           return;
         }
         // Fetch user email
-        fetch('http://localhost:5000/me', {
+        fetch('https://social-place-backend.vercel.app/me', {
           headers: { Authorization: `Bearer ${token}` }
         })
           .then(response => {
