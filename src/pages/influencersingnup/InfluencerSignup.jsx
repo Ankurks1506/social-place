@@ -81,7 +81,7 @@ const InfluencerSignup = () => { // Define signup form component
   return ( // Render JSX
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-teal-900 text-white flex flex-col items-center justify-center p-6 relative"> 
       <h2 className="text-teal-400 text-5xl font-bold mb-6">INFLUENCER SINGNUP</h2> 
-      <h2 className="text-white-400 text-3xl font-bold mb-6">login users can create profile</h2>
+      <h2 className="text-white-400 text-3xl font-bold mb-6">THIS FEATURE IS NOT PUBLIC RIGHT NOW</h2>
       {error && <p className="text-red-500 mb-4">{error}</p>}
       {success && <p className="text-green-500 mb-4">{success}</p>} 
       <form onSubmit={handleSubmit} className="space-y-4"> 
